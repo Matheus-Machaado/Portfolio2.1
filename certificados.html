@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificados</title>
+    <link rel="shortcut icon" href="img/certificadosicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-transform: capitalize;
+  transition: all .2s cubic-bezier(.34,1.12,.68,1.31);
+}
+
+:root {
+    --color1: #1f242d;
+    --color2: #7793c5;
+    --color3: #323946;
+    --color4: #7794c5a2;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: var(--color1);
+    width: 100%;
+    padding: 2.0rem 9%;
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+}
+
+header h1{
+    font-size: 2.3rem;
+}
+
+header i {
+    position: absolute;
+    top: 30%;
+    left: 2%;
+    font-size: 3rem;
+    color: white;
+    transition: .2s ease-in-out;
+}
+
+header i:hover {
+    color: var(--color4);
+}
+
+.galeria {
+    min-height: 100vh;
+    background-color: var(--color3);
+    padding-bottom: 10.0rem;
+}
+
+.galeria .controles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2.0rem 0;
+    list-style: none;
+}
+
+.galeria .controles .botao {
+    height: 4.0rem;
+    width: 14.0rem;
+    background-color: var(--color2);
+    color: white;
+    font-size: 2.1rem;
+    cursor: pointer;
+    margin: 2.0rem;
+    box-shadow: .3rem .3rem 0 rgba(0, 0, 0, 0.452);
+    text-align: center;
+}
+
+.galeria .controles .botao.active {
+    background-color: var(--color4);
+    color: white;
+}
+
+.galeria .controles .botao:hover {
+    background-color: var(--color4);
+}
+
+.galeria .image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.galeria .image-container .image {
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    border: 1rem solid var(--color2);
+    border-radius: 5px;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+    margin: 2.0rem;
+}
+
+.galeria .image-container .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.galeria .image-container .image:hover img {
+    transform: scale(1.06);
+}
+    </style>
+</head>
+<body>
+    <header>
+        <a href="portfolio.html"><i class='bx bx-left-arrow-alt'></i></a>
+        <h1>Certificados</h1>
+    </header>
+    <div class="galeria">
+        <ul class="controles">
+            <li class="botao active" data-filter="todos">Todos</li>
+            <li class="botao" data-filter="design">Design</li>
+            <li class="botao" data-filter="html-css">HTML & CSS</li>
+            <li class="botao" data-filter="javascript">JavaScript</li>
+        </ul>
+
+        <div class="image-container">
+            <a href="img/certificado01.PNG" class="image design">
+                <img src="img/certificado01.PNG" alt="">
+            </a>
+            <a href="img/certificado02.PNG" class="image design">
+                <img src="img/certificado02.PNG" alt="">
+            </a>
+            <a href="img/certificado03.PNG" class="image design">
+                <img src="img/certificado03.PNG" alt="">
+            </a>
+            <a href="img/certificado04.PNG" class="image design">
+                <img src="img/certificado04.PNG" alt="">
+            </a>
+            <a href="img/certificado05.PNG" class="image html-css">
+                <img src="img/certificado05.PNG" alt="">
+            </a>
+            <a href="img/certificado06.PNG" class="image html-css">
+                <img src="img/certificado06.PNG" alt="">
+            </a>
+            <a href="img/certificado07.PNG" class="image html-css">
+                <img src="img/certificado07.PNG" alt="">
+            </a>
+            <a href="img/certificado08.PNG" class="image html-css">
+                <img src="img/certificado08.PNG" alt="">
+            </a>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.botao').click(function(){
+                $(this).addClass('active').siblings().removeClass('active');
+                var filter = $(this).attr('data-filter')
+                if(filter == 'todos'){
+                    $('.image').show(400);
+                }else{
+                    $('.image').not('.'+filter).hide(200);
+                    $('.image').filter('.'+filter).show(400);
+                }
+            });
+            $('.galeria').magnificPopup({
+                delegate:'a',
+                type:'image',
+                galeria:{
+                    enabled:true
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

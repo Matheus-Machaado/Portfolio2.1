@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matheus Machado</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="img/port-icon.png" type="image/x-icon">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <a href="#" class="logo">Matheus Machado</a>
+
+        <div id="menu" onclick="openMenu()"><i class='bx bx-menu'></i></div>
+        
+        <nav>
+            <ul>
+                <a href="#inicio" class="active"><li>Inicio</li></a>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="navbarlateral">
+        <div id="fecha" onclick="fecharMenu()"><i class='bx bx-menu-alt-right'></i></div>
+        <ul>
+            <li class="item-menu ativo"><a href="#inicio">Início</a></li>
+            <li class="item-menu"><a href="#sobre">Sobre</a></li>
+            <li class="item-menu"><a href="#habilidades">Habilidades</a></li>
+            <li class="item-menu"><a href="#projetos">Projetos</a></li>
+            <li class="item-menu"><a href="#contato">Contato</a></li>
+        </ul>
+    </div>
+
+    <section class="inicio" id="inicio">
+        <div class="inicio-content">
+            <h3>Olá, eu sou</h3>
+            <h1>Matheus Machado.</h1>
+            <div class="text-type">
+                <span></span>
+            </div>
+            <a href="midia/curriculo-matheus-henrique-machado.pdf" download="curriculo-matheus-henrique-machado.pdf" type="aplication/pdf" class="cvBtn">Baixar CV</a>
+        </div>
+        <section class="img-content">
+            <img src="hand-coding-animate.svg" alt="">
+            <div class="midias">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/matheus-machado-241979261/" target="_blank" rel="external"><i class='bx bxl-linkedin'></i></a></li>
+                    <li><a href="https://github.com/Matheus-Machaado?tab=repositories" target="_blank" rel="external"><i class='bx bxl-github'></i></a></li>
+                    <li><a href="https://www.instagram.com/negueb4__/" target="_blank" rel="external"><i class='bx bxl-instagram-alt'></i></a></li>
+                </ul>   
+            </div>
+        </section>
+    </section>
+    <section class="sobre" id="sobre">
+        <h1>Quem sou Eu?</h1>
+        <div class="sobrecontainer">
+            <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/Lu0DB-CJiZo?si=a2H_S2EDNLpdxx9V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+            <div class="sobre-content">
+                <p>Olá, eu sou um Desenvolvedor Front-end com dois anos de experiência em Desenvolvimento Web. Atualmente, estou no meu quarto semestre do curso de Análise e Desenvolvimento de Sistemas na FIAP. Possuo  foco em Desenvolvimento Web, com conhecimentos em HTML, CSS e JavaScript. Me considero ágil, proativo e sempre disposto a aprender novas linguagens e formas de evoluir como profissional. Estou ansioso por uma oportunidade em que eu possa desenvolver as minhas habilidades e demonstrar o meu valor e o meu empenho.</p>
+            </div>
+        </div>
+    </section>
+    <section class="habilidades" id="habilidades">
+        <h1>Minhas Habilidades</h1>
+        <div class="habilidades-row">
+            <div class="habilidades-column">
+                <div class="habilidades-box">
+                    <div class="habilidades-content">
+                        <div class="progress">
+                            <h3>HTML <span>90%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>CSS <span>80%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>JavaScript <span>65%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>Python <span>20%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+                <h3 id="habilidade-type">Habilidades de Programação</h3>
+            </div>
+
+            <div class="habilidades-column">
+                <div class="habilidades-box">
+                    <div class="habilidades-content">
+                        <div class="progress">
+                            <h3>Desenvolvimento Web <span>90%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>Web Design <span>80%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>Solução de Problemas <span>90%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3>Proatividade <span>100%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+                <h3 id="habilidade-type">Habilidades Profissionais</h3>
+            </div>
+        </div>
+        <div class="certificado"><a href="certificados.html">Certificados <i class='bx bxs-file'></i></a></div>
+    </section>
+
+    <section class="projetos" id="projetos">
+        <h1>Projetos</h1>
+        
+        <div class="projetos-container">
+            <div class="projetos-box">
+                <i class='bx bxs-paint'></i>
+                <h3>Design</h3>
+                <p>Meus Projetos de Design utilizando Figma e outras Tecnologias</p>
+                <a href="pjdesign.html" class="cvBtn">Ver Mais</a>
+            </div>
+            <div class="projetos-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Projetos Web</h3>
+                <p>Meus Projetos Web utilizando HTML, CSS e JavaScript</p>
+                <a href="pjweb.html" class="cvBtn">Ver Mais</a>
+            </div>
+            <div class="projetos-box">
+                <i class='bx bxs-videos'></i>
+                <h3>Coding</h3>
+                <p>Vídeos de Projetos na Prática com HandCam</p>
+                <a href="pjshorts.html" class="cvBtn">Ver Mais</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contato" id="contato">
+        <h1>Contato</h1>
+
+        <form 
+        action="https://formsubmit.co/matheus.thosi@gmail.com"
+        method="POST">
+        <div class="input-box">
+            <input type="text"  name="name" placeholder="Nome Completo" required>
+            <input type="email"  name="email" placeholder="Seu Email" required>
+        </div>
+        <div class="input-box">
+            <input type="number" name="phone number" placeholder="Número de Telefone">
+            <input type="text" name="subject" placeholder="Assunto">
+            <input type="hidden" name="_captcha" value="false">
+        </div>
+        <input
+        type="hidden"
+        name="_next"
+        value="https://matheus-machaado.github.io/Portfolio2.1/mensagemenviada.html"
+        />
+        <textarea name="message" id="" cols="30" rows="10" placeholder="Sua Mensagem"></textarea>
+        <input type="submit" value="Enviar Mensagem" class="cvBtn">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>E-mail para contato: matheus.thosi@gmail.com | Desenvolvido por <a href="https://www.linkedin.com/in/matheus-machado-241979261/" target="_blank">Matheus Machado</a></p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#" class="cvBtn"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
