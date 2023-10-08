@@ -1,2 +1,2 @@
 # Portfolio2.1
-Reformulação do design do meu portfólio anterior, com a adição de novas páginas e funcionalidades.
+Reformulação do design do meu portfólio. Agora, o portfólio conta com um setor dedicado às minhas competências e uma página específica para exibir meus certificados.
